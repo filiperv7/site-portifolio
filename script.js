@@ -1,19 +1,22 @@
-fetch('https://api.github.com/users/filiperv7')
+async function getUserGitHub() {
+    const userGitHub = fetch('https://api.github.com/users/filiperv7')
     .then(response => response.json())
-    .then(gitHubData => {
+    .then(data => {
+        return data
+    });
+    
+    return userGitHub
+}
 
+function writeUserData() {
+    const user = getUserGitHub()
+    user.then(res => {
         const profile = document.querySelector('#nickName')
         const bio = document.querySelector('.textBio')
 
-        console.log(gitHubData)
-        bio.textContent = gitHubData.bio
-        profile.textContent += gitHubData.login
-        
-    });
+        profile.textContent = `@${res.login}`
+        bio.textContent = res.bio
+    })  
+}
 
-
-fetch('https://api.github.com/users/filiperv7/repos')
-    .then(response => response.json())
-    .then(repos => {
-        console.log(repos)
-    });
+writeUserData()

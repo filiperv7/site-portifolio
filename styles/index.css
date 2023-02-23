@@ -1,61 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-}
-
-:root {
-    --textColorPrimary: rgb(250, 122, 56);
-    --textColorPrimary_75: rgb(250, 122, 56, 0.75);
-    --textColorSecundary: rgb(84, 97, 171);
-    
-    --btnColor: rgba(250, 121, 56, 0.5);
-    
-    --background-dark: rgb(40, 42, 54);
-    --backgroundCards-dark: rgb(140, 155, 245, 0.15);
-    --textColor-dark: rgb(245, 237, 237);
-    --borderColor-dark: rgb(245, 237, 237);
-
-    --fontPrincipal: 'JetBrains Mono', monospace;
-}
-
-body {
-    background-color: var(--background-dark);
-    
-    font-family: var(--fontPrincipal);
-    color: var(--textColor-dark);
-}
-
-main {
-    max-width: 700px;
-
-    margin: 22px auto 0;
-}
-
-main header {
-    padding: 0 22px;
-    max-width: 700px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    border: 1.5px solid var(--borderColor-dark);
-    border-radius: 12px;
-    color: var(--textColorPrimary);
-}
-
-header .projects {
-    display: flex;
-    align-items: center;
-
-    gap: 6px;
-}
-
-header .projects .ph-code {
-    font-size: 20px;
-}
+@import url(global.css);
 
 main .infos {
     margin: 18px 0;
@@ -121,6 +64,16 @@ main .repos {
     height: 200px;
 }
 
+main .repos a {
+    display: block;
+    text-align: end;
+
+    margin-right: calc(700px - 680px);
+
+    font-size: .8rem;
+    color: var(--textColorTertiary);
+}
+
 main .repos .reposCards {
     display: flex;
     justify-content: center;
@@ -130,7 +83,7 @@ main .repos .reposCards {
 
 .repos .repoCard {
     width: 323px;
-    height: 125px;
+    height: 155px;
 
     background-color: var(--backgroundCards-dark);
 
@@ -142,3 +95,11 @@ main .repos .reposCards {
     margin-top: 4px;
 }
 
+.repos .repoCard {
+    padding: 10px
+}
+
+.repoCard .description {
+    margin-top: 4px;
+    font-size: .7rem;
+}
