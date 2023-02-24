@@ -3,22 +3,23 @@
   padding: 0;
 
   box-sizing: border-box;
-
-  font-size: 18px;
 }
 
 :root {
-  --textColorPrimary: rgb(250, 122, 56);
-  --textColorPrimary_75: rgb(250, 122, 56, 0.75);
-  --textColorSecundary: rgb(84, 97, 171);
-  --textColorTertiary: rgb(6, 226, 213);
+  font-size: 62.5%;  /* 62.5% = 10px */
+  
+  --colorPrimary: rgb(250, 122, 56);
+  --colorPrimary_75: rgb(250, 122, 56, 0.75);
+  --colorSecundary: rgb(84, 97, 171);
+  --colorTertiary: rgb(6, 226, 213);
   
   --btnColor: rgba(250, 121, 56, 0.5);
   
   --background-dark: rgb(40, 42, 54);
   --backgroundCards-dark: rgb(140, 155, 245, 0.15);
   --textColor-dark: rgb(245, 237, 237);
-  --borderColor-dark: rgb(245, 237, 237);
+  --textColor-dark_20: rgb(245, 237, 237, 0.2);
+  --borderColor-dark: rgba(245, 237, 237, 0.6);
 
   --fontPrincipal: 'JetBrains Mono', monospace;
 }
@@ -47,26 +48,44 @@ main header {
 
   border: 1.5px solid var(--borderColor-dark);
   border-radius: 12px;
-  color: var(--textColorPrimary);
 }
 
-header h2 {
-  font-size: 1.3rem;
+header a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
 }
 
-header .projects {
+header a img {
+  height: 100%;
+}
+
+header .projects a {
   display: flex;
   align-items: center;
 
   gap: 6px;
 
-  color: var(--textColorTertiary);
+  color: var(--colorTertiary);
+
+  text-decoration: none;
 }
 
 header .projects p {
-  font-size: .85rem;
+  font-size: 1.6rem;
 }
 
 header .projects .ph-code {
   font-size: 20px;
+}
+
+main h2 {
+  color: var(--colorSecundary);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+main p {
+  font-size: 1.4rem;
 }
