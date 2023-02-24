@@ -1,4 +1,4 @@
-async function getUserGitHub() {
+function getUserGitHub() {
     const userGitHub = fetch('https://api.github.com/users/filiperv7')
     .then(response => response.json())
     .then(data => {

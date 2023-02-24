@@ -10,6 +10,10 @@ main .infos .profile {
     text-align: center;
 }
 
+.infos .profile #nickName {
+    font-size: 2rem;
+}
+
 .infos .buttons {
     display: flex;
     justify-content: center;
@@ -39,13 +43,6 @@ main .infos .profile {
     font-size: 22px;
 }
 
-main h3 {
-    color: var(--textColorSecundary);
-    font-weight: 900;
-
-    margin-bottom: 5px;
-}
-
 .infos .bio {
     margin-top: 16px;
 }
@@ -57,49 +54,11 @@ main h3 {
     gap: 3px;
     margin-top: 12px;
 
-    color: var(--textColorPrimary_75);
+    color: var(--colorPrimary_75);
 }
 
-main .repos {
-    height: 200px;
+.bio .email .ph-envelope {
+    font-size: 2.4rem;
 }
 
-main .repos a {
-    display: block;
-    text-align: end;
 
-    margin-right: calc(700px - 680px);
-
-    font-size: .8rem;
-    color: var(--textColorTertiary);
-}
-
-main .repos .reposCards {
-    display: flex;
-    justify-content: center;
-
-    gap: 20px;
-}
-
-.repos .repoCard {
-    width: 323px;
-    height: 155px;
-
-    background-color: var(--backgroundCards-dark);
-
-    border: 1px solid var(--borderColor-dark);
-    border-radius: 10px;
-}
-
-.repos a.seeMore {
-    margin-top: 4px;
-}
-
-.repos .repoCard {
-    padding: 10px
-}
-
-.repoCard .description {
-    margin-top: 4px;
-    font-size: .7rem;
-}
