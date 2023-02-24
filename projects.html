@@ -15,15 +15,35 @@
 <body>
   <main>
     <header>
-      <h2 class="logo">Filipe Rodrigo</h2>
+      <a href="/index.html">
+        <img src="/assets/logo_FilipeRodrigo.png" alt="">
+      </a>
       
       <div class="projects">
+        <a href="projects.html">
           <i class="ph-code"></i>
           <p>Projetos</p>
+        </a>
       </div>
     </header>
+
+    <div class="projectsContainer">
+      <div class="head">
+        <h2>Projetos</h2>
+        
+        <form class="searchForm">
+          <i class="ph-magnifying-glass-bold"></i>
+          <input id="search" type="text" placeholder='Pesquisar "/"'>
+        </form>
+      </div>
+
+      <div id="cards"></div>
+    </div>
+
   </main>
 
   <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="projectsIteration.js"></script>
+  <script src="searchProjects.js"></script>
 </body>
 </html>

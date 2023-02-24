@@ -1,2 +1,112 @@
 @import url(global.css);
 
+main .projectsContainer {
+  margin-top: 6rem;
+}
+
+main .projectsContainer .head {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: end;
+
+  margin-bottom: .4rem;
+}
+
+main .projectsContainer .searchForm {
+  display: flex;
+  gap: .7rem;
+
+  font-size: 1.8rem;
+
+  width: 18rem;
+  height: 3.5rem;
+  
+  border: 2px solid var(--borderColor-dark);
+  border-radius: 2rem;
+
+  transition: all .7s;
+}
+
+.searchForm i {
+  position: absolute;
+
+  color: var(--borderColor-dark);
+  margin: .7rem 1rem;
+  margin-right: 0;
+}
+
+.searchForm input {
+  box-sizing: border-box;
+  padding-left: 3.5rem;
+  width: 100%;
+
+  background-color: transparent;
+  
+  border: none;
+  border-radius: 2rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+
+  caret-color: var(--colorPrimary_75);
+
+  color: var(--textColor-dark);
+}
+
+.searchForm input:focus {
+  outline: 0;
+}
+.searchForm:has(input:focus) {
+  border-color: var(--colorPrimary_75);
+
+  width: 34.5rem;
+}
+
+main .projectsContainer #cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+#cards .card {
+  width: 34.5rem;
+  height: 18rem;
+
+  background-color: var(--backgroundCards-dark);
+
+  border: 1px solid var(--borderColor-dark);
+  border-radius: 2rem;
+  padding: 11px;
+
+  transition: all .5s;
+  cursor: pointer;
+}
+
+#cards:has(.card:hover) .card:not(:hover) {
+  opacity: .6;
+  scale: .98;
+}
+
+.card h3 {
+  color: var(--colorPrimary);
+  font-size: 1.6rem;
+}
+
+.card .description {
+  font-size: 1.2rem;
+
+  color: var(--borderColor-dark);
+}
+
+.card .tags, .card .branches {
+  display: flex;
+
+  align-items: center;
+  gap: .5rem;
+}
