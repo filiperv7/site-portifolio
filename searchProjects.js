@@ -26,4 +26,6 @@ function filterCards() {
   }
 }
 
-// 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
+document.querySelector('input').addEventListener('keydown', (event) => {
+  event.preventDefault()
+})
