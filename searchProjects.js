@@ -26,6 +26,6 @@ function filterCards() {
   }
 }
 
-document.querySelector('input').addEventListener('keydown', (event) => {
+document.querySelector('form').onsubmit = (event) => {
   event.preventDefault()
-})
+}
