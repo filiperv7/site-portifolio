@@ -2,7 +2,7 @@ let cards
 
 setTimeout(() => {
   cards = document.querySelectorAll('.card')
-}, 100)
+}, 1000)
 
 let filter = document.querySelector('#search')
 filter.addEventListener('input', filterCards)
