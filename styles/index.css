@@ -43,8 +43,14 @@ main .infos .profile {
     font-size: 22px;
 }
 
+.infos .bioAndSocial {
+    display: flex;
+}
+
 .infos .bio {
     margin-top: 16px;
+
+    flex-grow: 3;
 }
 
 .bio .email {
@@ -61,4 +67,116 @@ main .infos .profile {
     font-size: 2.4rem;
 }
 
+.email a {
+    text-decoration: none;
+    color: var(--colorPrimary_75);
+}
 
+.infos .social {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: end;
+
+    gap: 1.2rem;
+}
+
+
+.skillsAndJourney {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.hardSkillsContainer {
+    width: 29rem;
+}
+
+.hardSkillsContainer .hardSkills {
+    margin-top: 1.8rem;
+
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.hardSkills li {
+    list-style: none;
+
+    margin-right: 4.1rem;
+    margin-bottom: 2rem;
+}
+
+.hardSkills li h2{
+    color: var(--textColor-dark);
+}
+
+.journeyContainer {
+    width: 38.3rem;
+}
+
+.journeyContainer .journeyTrail {
+    position: absolute;
+
+    height: 23rem;
+    border: .2rem dashed var(--colorTertiary);
+    border-radius: 1rem;
+
+    margin-left: 3.5rem;
+    margin-top: 1.7rem;
+
+    z-index: 1;
+}
+
+.journeyContainer .journey {
+    margin-top: 1.8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.journey li {
+    display: flex;
+    align-items: center;
+    
+    gap: .6rem;
+    
+    list-style: none;
+}
+
+.journey li .year {
+    font-size: 1.1rem;
+}
+
+.journey .ellipse {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    
+    background-color: var(--colorPrimary);
+    
+    z-index: 100;
+}
+
+.journey li .description {
+    color: var(--colorPrimary_75);
+    font-size: 1rem;
+    font-weight: 900;
+
+    width: 31rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2rem;
+
+    font-size: 1rem;
+    color: var(--colorPrimary_75);
+
+    opacity: 75%;
+}
